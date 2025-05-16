@@ -62,9 +62,9 @@ const Events: React.FC = () => {
   return (
     <>
       <section id="events" aria-labelledby="events-title">
-        <h2 id="events-title">Upcoming Events &amp; Timetable</h2>
+        <h2 id="events-title">Kommende Arrangementer &amp; Timeplan</h2>
         <p className="section-subtitle">
-          Mark your calendar and don’t miss our exciting dance workshops, community gatherings, and volunteer meetups. We update our schedule regularly to keep you in the loop!
+          Merk av i kalenderen din og ikke gå glipp av våre spennende danseworkshops, fellessamlinger og frivilligmøter. Vi oppdaterer timeplanen vår regelmessig for å holde deg informert!
         </p>
         <table className="events-timetable" role="table" aria-describedby="events-desc" tabIndex={0}>
           <caption id="events-desc" className="visually-hidden">
@@ -85,7 +85,7 @@ const Events: React.FC = () => {
             {events.map(({ date, title, time, location, notes, highlight }) => (
               <tr key={date + title} className={highlight ? 'event-highlight' : undefined}>
                 <td>
-                  <time dateTime={date}>{new Date(date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</time>
+                  <time dateTime={date}>{new Date(date).toLocaleDateString('nb-NO', { day: 'numeric', month: 'short', year: 'numeric' })}</time>
                 </td>
                 <td>{title}</td>
                 <td>{time}</td>
