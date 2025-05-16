@@ -17,7 +17,7 @@ const events: Event[] = [
     title: 'Bryggedans Med Dancecity',
     time: '13:00 - 16:00',
     location: 'Salt Art and Music',
-    notes: 'Bring your family and come and enjoy an afternoon of outdoor latin dance music every sunday .',
+    notes: 'Ta med familien og nyt en ettermiddag med latin dansemusikk utendørs hver søndag.',
     highlight: true,
   },
   {
@@ -25,14 +25,14 @@ const events: Event[] = [
     title: 'Bachatera',
     time: '19:00 - 23:00',
     location: 'Cafe SØR',
-    notes: 'Gratis bachata social for alle every wednesday.',
+    notes: 'Gratis bachata sosialdans for alle hver onsdag.',
   },
   {
     date: '2025-06-08',
     title: 'Jam',
     time: '17:00 - 21:00',
     location: 'Cafe Sor',
-    notes: 'Jam session with live band. inviting participants to sing and express their music talents with a live band and perform a mini concert!',
+    notes: 'Jam session med live band. Vi inviterer deltakere til å synge og uttrykke sine musikalske talenter med et live band og fremføre en mini konsert!',
     highlight: true,
   },
   {
@@ -40,21 +40,21 @@ const events: Event[] = [
     title: 'Flip Kidz',
     time: '16:00 - 19:00',
     location: 'Dancecity',
-    notes: 'safe space for kids to play and have fun while learning new skills and making new friends. age group 2-6 yrs',
+    notes: 'Trygt rom for barn å leke og ha det gøy mens de lærer nye ferdigheter og får nye venner. Aldersgruppe 2-6 år',
   },
   {
     date: '2025-06-6',
-    title: 'Oslo outdoors',
+    title: 'Oslo Utendørs',
     time: '15:00 - 17:00',
     location: 'Opera Hus',
-    notes: 'gratis dancing and classes infront of the Opera hus for alle.',
+    notes: 'Gratis dans og kurs foran Opera huset for alle.',
   },
   {
     date: '2025-06-5',
-    title: 'Contemporary Dance Workshop',
+    title: 'Samtidsdans Workshop',
     time: '18:00 - 20:00',
     location: 'Dancecity',
-    notes: 'Register in advance recommended. gratis youth workshop for 13-17 years.',
+    notes: 'Påmelding på forhånd anbefales. Gratis ungdomsworkshop for 13-17 år.',
   },
 ];
 
@@ -68,16 +68,16 @@ const Events: React.FC = () => {
         </p>
         <table className="events-timetable" role="table" aria-describedby="events-desc" tabIndex={0}>
           <caption id="events-desc" className="visually-hidden">
-            Upcoming events and weekly activity timetable
+            Kommende arrangementer og ukentlig aktivitetsplan
           </caption>
           <thead>
             <tr>
-              <th scope="col">Date</th>
-              <th scope="col">Event</th>
-              <th scope="col">Time</th>
-              <th scope="col">Location</th>
-              <th scope="col" aria-label="Description or notes">
-                Notes
+              <th scope="col">Dato</th>
+              <th scope="col">Arrangement</th>
+              <th scope="col">Tid</th>
+              <th scope="col">Sted</th>
+              <th scope="col" aria-label="Beskrivelse eller notater">
+                Notater
               </th>
             </tr>
           </thead>

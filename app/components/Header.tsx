@@ -3,10 +3,10 @@
 import React, { useState } from 'react';
 
 const navLinks = [
-  { href: '#activities', label: 'Activities' },
-  { href: '#events', label: 'Events' },
-  { href: '#volunteer', label: 'Volunteer' },
-  { href: '#donate', label: 'Donate' },
+  { href: '#activities', label: 'Aktiviteter' },
+  { href: '#events', label: 'Arrangementer' },
+  { href: '#volunteer', label: 'Bli Frivillig' },
+  { href: '#donate', label: 'Donér' },
 ];
 
 const Header: React.FC = () => {

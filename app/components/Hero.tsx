@@ -5,12 +5,12 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <>
-      <section className="hero" aria-label="Welcome to DanceCity volunteer organization">
+      <section className="hero" aria-label="Velkommen til DanceCity frivillig organisasjon">
         <div className="hero-content" role="banner">
-          <h1>Welcome to DanceCity</h1>
-          <p>Your community hub for dance, fun activities, and volunteer spirit!</p>
+          <h1>Velkommen til DanceCity</h1>
+          <p>Ditt lokale samlingspunkt for dans, morsomme aktiviteter og frivillig engasjement!</p>
           <a href="#volunteer" className="btn-primary">
-            Join Us Today
+            Bli Med I Dag
           </a>
         </div>
       </section>

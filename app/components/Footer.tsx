@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
     <>
       <footer>
         <p>
-          &copy; 2025 Dance With Dancecity Org - 925 542 547 Volunteer Organization. All rights reserved.
+          &copy; 2025 Dance With Dancecity Org - 925 542 547 Frivillig Organisasjon. Alle rettigheter reservert.
           <br />
-          <a href="mailto:info@dancecity.no">dancewithdancecity@gmail.com</a> | Follow us on{' '}
+          <a href="mailto:info@dancecity.no">dancewithdancecity@gmail.com</a> | Følg oss på{' '}
           <a href="https://www.facebook.com/dancecity" target="_blank" rel="noopener noreferrer">
             Facebook
           </a>

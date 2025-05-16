@@ -6,23 +6,22 @@ const DonateCTA: React.FC = () => {
   return (
     <>
       <section id="donate" className="cta-section" aria-label="Donate or sponsor DanceCity">
-        <h2>Support DanceCity</h2>
+        <h2>Støtt DanceCity</h2>
         <p>
-          Your generous donations and sponsorships are vital to keep our community vibrant and dancing. Every gift helps us provide free and affordable activities, purchase equipment, and maintain our
-          facilities.
+          Dine sjenerøse donasjoner og sponsing er avgjørende for å holde vårt fellesskap levende og dansende. Hver gave hjelper oss med å tilby gratis og rimelige aktiviteter, kjøpe utstyr og vedlikeholde våre fasiliteter.
         </p>
         <ul>
-          <li>💖 Donations of any amount welcome, and are fully tax-deductible.</li>
-          <li>🤝 Sponsorship options available for businesses and individuals - help us grow!</li>
-          <li>🎉 Sponsor recognition at events and on our website.</li>
-          <li>📅 Flexible giving options: one-time, monthly, or yearly support.</li>
+          <li>💖 Donasjoner av alle beløp er velkomne, og er fullt fradragsberettiget.</li>
+          <li>🤝 Sponsormuligheter tilgjengelig for bedrifter og privatpersoner - hjelp oss å vokse!</li>
+          <li>🎉 Sponsoranerkjennelse på arrangementer og på vår nettside.</li>
+          <li>📅 Fleksible givermuligheter: engangs, månedlig eller årlig støtte.</li>
         </ul>
         <div className="cta-buttons">
           <a href="https://example.com/donate" target="_blank" rel="noopener noreferrer" className="btn-primary" role="button" tabIndex={0}>
-            Donate
+            Donér
           </a>
-          <a href="https://example.com/sponsor" target="_blank" rel="noopener noreferrer" className="btn-secondary" role="button" tabIndex={0}>
-            Become a Sponsor
+          <a href="/sponsor" className="btn-secondary" role="button" tabIndex={0}>
+            Bli Sponsor
           </a>
         </div>
       </section>

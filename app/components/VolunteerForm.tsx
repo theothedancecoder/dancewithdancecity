@@ -30,21 +30,20 @@ const VolunteerForm: React.FC = () => {
   return (
     <>
       <section id="volunteer" aria-labelledby="volunteer-title">
-        <h2 id="volunteer-title">Volunteer With Us</h2>
+        <h2 id="volunteer-title">Bli Frivillig Hos Oss</h2>
         <p className="section-subtitle">
-          Volunteering with DanceCity is a rewarding way to connect with your community and support the arts. Whether helping organize events, teaching dance, or supporting our administrative
-          efforts, your contribution makes a big impact!
+          Å være frivillig hos DanceCity er en givende måte å knytte bånd med lokalsamfunnet og støtte kunsten. Enten du hjelper til med å organisere arrangementer, underviser i dans, eller støtter vårt administrative arbeid, gjør ditt bidrag en stor forskjell!
         </p>
         <form className="volunteer-form" aria-label="Volunteer sign up form" onSubmit={handleSubmit} noValidate>
           <div className="form-group">
             <label htmlFor="name">
-              Full Name <span aria-hidden="true">*</span>
+              Fullt Navn <span aria-hidden="true">*</span>
             </label>
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Your full name"
+              placeholder="Ditt fulle navn"
               value={formData.name}
               onChange={handleChange}
               required
@@ -52,13 +51,13 @@ const VolunteerForm: React.FC = () => {
           </div>
           <div className="form-group">
             <label htmlFor="email">
-              Email Address <span aria-hidden="true">*</span>
+              E-postadresse <span aria-hidden="true">*</span>
             </label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="your.email@example.com"
+              placeholder="din.epost@eksempel.com"
               value={formData.email}
               onChange={handleChange}
               required
@@ -66,31 +65,31 @@ const VolunteerForm: React.FC = () => {
           </div>
           <div className="form-group">
             <label htmlFor="interest">
-              I am interested in <span aria-hidden="true">*</span>
+              Jeg er interessert i <span aria-hidden="true">*</span>
             </label>
             <select id="interest" name="interest" value={formData.interest} onChange={handleChange} required>
               <option value="" disabled>
-                Select an option
+                Velg et alternativ
               </option>
-              <option value="events">Helping with Events</option>
-              <option value="teaching">Teaching Dance</option>
-              <option value="admin">Administrative Support</option>
-              <option value="sponsorship">Sponsor Liaison</option>
-              <option value="other">Other</option>
+              <option value="events">Hjelpe med Arrangementer</option>
+              <option value="teaching">Undervisning i Dans</option>
+              <option value="admin">Administrativ Støtte</option>
+              <option value="sponsorship">Sponsorkontakt</option>
+              <option value="other">Annet</option>
             </select>
           </div>
           <div className="form-group">
-            <label htmlFor="message">Additional Info</label>
+            <label htmlFor="message">Tilleggsinformasjon</label>
             <textarea
               id="message"
               name="message"
-              placeholder="Tell us a bit about yourself"
+              placeholder="Fortell oss litt om deg selv"
               value={formData.message}
               onChange={handleChange}
             />
           </div>
-          <input type="submit" value="Sign Up Now" />
-          {submitSuccess && <p className="success-message">Thanks for signing up!</p>}
+          <input type="submit" value="Meld Deg På Nå" />
+          {submitSuccess && <p className="success-message">Takk for påmeldingen!</p>}
         </form>
       </section>
 

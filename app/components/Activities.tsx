@@ -13,37 +13,35 @@ type Activity = {
 const activities: Activity[] = [
   {
     id: 'BeSporty',
-    title: 'Flip kidz',
+    title: 'Flip Kidz',
     description:
-      'in collaboration with BeSporty we now have flipkidz a swedish concept in Oslo . For kids aged between 2-6yrsin Oslo every wednesday!',
+      'I samarbeid med BeSporty har vi nå Flipkidz, et svensk konsept i Oslo. For barn mellom 2-6 år i Oslo hver onsdag!',
     youtubeId: 'EqcUgWqqtX0',
     ariaLabel: 'Flip kidz video',
   },
   {
     id: 'Elder Care',
-    title: 'Elder dance ',
+    title: 'Seniordans',
     description:
-      'We run different dance activities for elders or people with limited mobility helping them enjoy the joy of movement.',
-    youtubeId: '1EKsdyZjyMg', 
-
-
-    ariaLabel: 'Ballet beginner class video',
+      'Vi arrangerer forskjellige danseaktiviteter for eldre eller personer med begrenset bevegelighet, og hjelper dem med å oppleve gleden ved bevegelse.',
+    youtubeId: '1EKsdyZjyMg',
+    ariaLabel: 'Seniordans video',
   },
   {
     id: 'salsa',
-    title: 'Salsa Dance Martine',
+    title: 'Salsa Dans Martine',
     description:
-      'Every sunday , join us salt Art and Music for latin social dancing for the whole family. Perfect your footwork, meet new friends, and immerse yourself in vibrant Latin rhythms.',
+      'Hver søndag, bli med oss i Salt Art and Music for latin sosial dans for hele familien. Perfeksjoner fotarbeidet ditt, møt nye venner og fordyp deg i livlige latinske rytmer.',
     youtubeId: 'byMynTZj3Us',
-    ariaLabel: 'Salsa dance night video',
+    ariaLabel: 'Salsa dansekveld video',
   },
   {
     id: 'Kids/Youth',
-    title: 'kids/youth zone',
+    title: 'Barn/Ungdom Sone',
     description:
-      'We collaborate with other clubs and groups to host different activities for kids and youth.',
+      'Vi samarbeider med andre klubber og grupper for å arrangere forskjellige aktiviteter for barn og ungdom.',
     youtubeId: 'Wbc5KAILxHc',
-    ariaLabel: 'youth zone video',
+    ariaLabel: 'ungdomssone video',
   },
 ];
 
@@ -58,10 +56,9 @@ const Activities: React.FC = () => {
   return (
     <>
       <section id="activities" aria-labelledby="activities-title">
-        <h2 id="activities-title">Our Activities</h2>
+        <h2 id="activities-title">Våre Aktiviteter</h2>
         <p className="section-subtitle">
-          Experience a variety of dance workshops and community events designed to inspire movement and connection. Suitable for all ages and skill levels, our diverse activities celebrate culture,
-          creativity, and fun.
+          Opplev et variert utvalg av danseworkshops og fellesarrangementer designet for å inspirere til bevegelse og fellesskap. Passende for alle aldre og ferdighetsnivåer, våre mangfoldige aktiviteter feirer kultur, kreativitet og moro.
         </p>
         <div className="activities-grid">
           {activities.map(({ id, title, description, youtubeId, ariaLabel }) => (
@@ -70,7 +67,7 @@ const Activities: React.FC = () => {
                 <>
                   {(loadingStates[id] !== false) && (
                     <div className="loading-placeholder">
-                      <div className="loading-text">Loading video...</div>
+                    <div className="loading-text">Laster video...</div>
                     </div>
                   )}
                   <iframe
