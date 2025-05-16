@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 const UnderConstruction: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const UnderConstruction: React.FC = () => {
       <div className="construction-page">
         <h1>🚧 Under Utvikling 🚧</h1>
         <p>Vår sponsorside er for tiden under utvikling. Vennligst kom tilbake snart!</p>
-        <a href="/" className="back-button">Tilbake til Forsiden</a>
+        <Link href="/" className="back-button">Tilbake til Forsiden</Link>
       </div>
 
       <style jsx>{`
